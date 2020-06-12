@@ -1,8 +1,9 @@
 <hr />
 <ul>
-  <li *ngFor="let dairyItem of diaryItems">
+  <li *ngFor="let diaryItem of diaryItems">
   {{
-    dairyItem.title
+    diaryItem.title
   }}
+  <app-diary-item-detail [diaryItem]='diaryItem'></app-diary-item-detail>
   </li>
 </ul>
