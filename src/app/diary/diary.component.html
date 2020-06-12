@@ -1,7 +1,7 @@
 <hr />
 <ul class='list-group'>
   <div *ngFor="let diaryItem of diaryItems, let i = index" class="diarydetail">
-  <li class='list-group-item d-flex align-items-center'>
+  <li appHighlight class='list-group-item d-flex align-items-center'>
       
   <h4>{{
     diaryItem.title
