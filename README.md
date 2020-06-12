@@ -1,9 +1,22 @@
 # Diary
 
+Diary project developed by Fredrick Ojure as an exercise in software development at Moringa school. The Application makes diary entries including title, start time and duration.
+On completion of a diary entry, users can delete.
+Users can also add diary entries
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+
+## Development Environment
+Before downloading into your local machine, please install
+1. Node JS
+2. Angular CLI
+3. Bootstrap
+4. Fontawesome
+
+Ensure git is installed in the local machine.
 
 ## Development server
 
+Download application from github. Navigate to application directory and run devolopment server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
