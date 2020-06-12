@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DiaryComponent } from './diary/diary.component';
 import { DiaryItemDetailComponent } from './diary-item-detail/diary-item-detail.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DiaryComponent,
-    DiaryItemDetailComponent
+    DiaryItemDetailComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
