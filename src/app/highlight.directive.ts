@@ -7,12 +7,12 @@ export class HighlightDirective {
 
   constructor(private elem: ElementRef) { }
 
-  @HostListener('click') onClick() {
+  @HostListener('click') onClicks() {
     this.textDeco('line-through');
   }
 
-  @HostListener('dblClick') onDoubleClick() {
-    this.textDeco('none');
+  @HostListener('dblClick') onDoubleClicks() {
+    this.textDeco('None');
   }
 
   private textDeco(action: string) {
