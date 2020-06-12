@@ -1,4 +1,6 @@
 <hr />
+<div class="row">
+  <div class="col-md-6">
 <ul class='list-group'>
   <div *ngFor="let diaryItem of diaryItems, let i = index" class="diarydetail">
   <li appHighlight class='list-group-item d-flex align-items-center'>
@@ -6,9 +8,14 @@
   <h4>{{
     diaryItem.title
   }}  </h4>
-  <br><span class="badge badge-primary badge-info">Duration: {{diaryItem.duration}} hours</span>
+  <br><span class="badge badge-primary badge-info">Duration: {{diaryItem.duration | minutesToHours}} hours</span>
 </li>
 <button (click)='toggleDetails(i)' class='btn btn-primary'>Toggle item details</button>
 <app-diary-item-detail *ngIf='diaryItem.showDetails' [diaryItem]='diaryItem' (isComplete)='itemComplete($event, i)'></app-diary-item-detail>
-  </div>
+</div>
 </ul>
+</div>
+<div class="col-md-6">
+  <app-diary-detail-form></app-diary-detail-form>
+</div>
+</div>

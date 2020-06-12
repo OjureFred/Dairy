@@ -8,6 +8,7 @@ import { DiaryComponent } from './diary/diary.component';
 import { DiaryItemDetailComponent } from './diary-item-detail/diary-item-detail.component';
 import { HighlightDirective } from './highlight.directive';
 import { MinutesToHoursPipe } from './minutes-to-hours.pipe';
+import { DiaryDetailFormComponent } from './diary-detail-form/diary-detail-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MinutesToHoursPipe } from './minutes-to-hours.pipe';
     DiaryComponent,
     DiaryItemDetailComponent,
     HighlightDirective,
-    MinutesToHoursPipe
+    MinutesToHoursPipe,
+    DiaryDetailFormComponent
   ],
   imports: [
     BrowserModule,
