@@ -13,8 +13,7 @@ export class DiaryComponent implements OnInit {
     { id: 3, title: 'Prepare plan for Quotes App', date: new Date(2020 / 6 / 13), startTime: '8 am', duration: 120 },
     { id: 4, title: 'View Video on Angular Directives', date: new Date(2020 / 6 / 14), startTime: '8 am', duration: 30 },
     { id: 5, title: 'Attend Service', date: new Date(2020 / 6 / 14), startTime: '10 am', duration: 240 }
-    
-  ]
+    ]
 
   constructor() { }
 
