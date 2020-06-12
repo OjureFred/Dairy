@@ -8,12 +8,16 @@ import { DiaryItem } from './../diary-item';
 })
 export class DiaryComponent implements OnInit {
   diaryItems: DiaryItem[] = [
-    { id: 1, title: 'Finish Diary app', date: new Date(2020 / 6 / 12), startTime: '8 am', duration: 240 },
-    { id: 2, title: 'Exercise', date: new Date(2020 / 6 / 12), startTime: '10 am', duration: 60 },
-    { id: 3, title: 'Prepare plan for Quotes App', date: new Date(2020 / 6 / 13), startTime: '8 am', duration: 120 },
-    { id: 4, title: 'View Video on Angular Directives', date: new Date(2020 / 6 / 14), startTime: '8 am', duration: 30 },
-    { id: 5, title: 'Attend Service', date: new Date(2020 / 6 / 14), startTime: '10 am', duration: 240 }
+    new DiaryItem(1, 'Finish Diary app', new Date(2020 / 6/ 12), '8 am',240),
+    new DiaryItem(2, 'Exercise', new Date(2020 / 6/ 12), '10 am', 60),
+    new DiaryItem(3, 'Prepare plan for Quotes App', new Date(2020 / 6 / 13), '8 am', 120),
+    new DiaryItem(4, 'View Video on Angular Directives', new Date(2020 / 6 / 14), '8 am', 30),
+    new DiaryItem(5, 'Attend Service', new Date(2020 / 6 / 14), '10 am', 240)
   ];
+
+  toggleDetails(index) {
+    this.diaryItems[index].showDetails = !this.diaryItems[index].showDetails;
+  }
 
   constructor() { }
 
@@ -21,3 +25,4 @@ export class DiaryComponent implements OnInit {
   }
 
 }
+ 
